@@ -3,39 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าแรกของฉัน</title>
-    </head>
+    <title>แนะนำตัว - ธนภัทร แสนคำยวง</title>
+
+    <!-- ฟอนต์ภาษาไทยจาก Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* พื้นหลังหลัก */
+        body {
+            font-family: 'Kanit', sans-serif;
+            background: linear-gradient(135deg, #2e6eb5, #58a5f0);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* กล่องหลัก */
+        .container {
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+            backdrop-filter: blur(8px);
+            animation: fadeIn 1s ease;
+        }
+
+        /* แอนิเมชันเข้า */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.3em;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #ffd700;
+        }
+
+        .student-id {
+            font-weight: bold;
+            font-size: 1.1em;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            margin-top: 10px;
+        }
+
+        /* ปุ่มโซเชียล */
+        .social-links {
+            margin-top: 25px;
+        }
+
+        .social-links a {
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 0 8px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #ffd700;
+            color: #1e3d70;
+            transform: translateY(-3px);
+        }
+
+        /* สำหรับหน้าจอมือถือ */
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .profile-pic {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
 <body>
 
-    <header>
-        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">หน้าหลัก</a></li>
-                <li><a href="about.html">เกี่ยวกับเรา</a></li>
-                <li><a href="contact.html">ติดต่อ</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
 
-    <main>
-        <section>
-            <h2>ส่วนเนื้อหาหลัก</h2>
-            <p>นี่คือย่อหน้าแรกของเว็บไซต์ ตัวอย่างนี้แสดงให้เห็นโครงสร้างพื้นฐานของ HTML5 ประกอบด้วย <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> และ <code>&lt;footer&gt;</code></p>
-            <p>คุณสามารถแก้ไขโค้ดนี้เพื่อใส่เนื้อหา รูปภาพ หรือองค์ประกอบอื่นๆ ที่คุณต้องการ</p>
-            
-            <h3>รายการตัวอย่าง</h3>
-            <ul>
-                <li>รายการที่ 1</li>
-                <li>รายการที่ 2</li>
-                <li>รายการที่ 3</li>
-            </ul>
-        </section>
-    </main>
+        <h1>สวัสดีครับ ผมชื่อ</h1>
+        <h2>ธนภัทร แสนคำยวง</h2>
 
-    <footer>
-        <p>&copy; 2025 เว็บไซต์ตัวอย่าง. สงวนลิขสิทธิ์.</p>
-    </footer>
+        <p class="student-id">รหัสประจำตัว: 67020993</p>
+
+        <p>ผมเป็นนักศึกษาที่มหาวิทยาลัยพะเยา</p>
+        <p>ผมกำลังมองหาโอกาสในการเรียนรู้และพัฒนาตัวเองอย่างต่อเนื่อง หากมีอะไรที่สามารถช่วยเหลือได้ หรือมีข้อเสนอแนะใด ๆ ยินดีรับฟังเสมอครับ</p>
+
+        <div class="social-links">
+            <a href="https://facebook.com/" target="_blank">Facebook</a>
+            <a href="mailto:example@email.com">Email</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </div>
+    </div>
 
 </body>
 </html>
