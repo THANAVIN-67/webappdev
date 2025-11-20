@@ -1,0 +1,49 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Travel agency website." />
+    <title>Travin Agency</title>
+  </head>
+  <body>
+    <h1>Welcome to Travin Agency</h1>
+    <p>Find the best destinations, guides, and travel inspiration for your perfect getaway.</p>
+
+    <h2>Packages</h2>
+    <p><strong>List</strong></p>
+    <ul>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a></li>
+      <li><a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a></li>
+    </ul>
+
+    <h2>Top Itineraries</h2>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2019/02/22/10/04/sunset-4013193_640.jpg" alt="A beautiful sunset over the horizon.">
+      </a>
+      <figcaption>A beautiful sunset over the horizon.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2025/04/12/14/25/olympic-tower-munich-9530250_640.jpg" alt="The Olympic Tower in Munich, Germany.">
+      </a>
+      <figcaption>The Olympic Tower in Munich, Germany.</figcaption>
+    </figure>
+
+    <figure>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">
+        <img src="https://cdn.pixabay.com/photo/2020/04/21/15/01/buddhist-temple-5073389_1280.jpg" alt="A detailed view of a traditional Buddhist temple's roof.">
+      </a>
+      <figcaption>A detailed view of a traditional Buddhist temple's roof.</figcaption>
+    </figure>
+
+  </body>
+</html>
+
+
+** end of index.html **
+
